@@ -17,3 +17,9 @@ Training used a distance-aware label function that extends heart-rate & calorie 
 > At inference time, the app only uses the simple inputs + derived features. No HR or calories required.
 
 ## 🗂️ Repo structure
+.
+├─ app.py # Streamlit UI (loads hydration_pipeline.pkl)
+├─ requirements.txt # Pinned versions (match training)
+├─ train_hydration_pipeline.py # Stacked model training (distance-aware label)
+├─ combined_data1-2.csv # (optional) training data location
+└─ hydration_pipeline.pkl # Saved artifact created by the training script
